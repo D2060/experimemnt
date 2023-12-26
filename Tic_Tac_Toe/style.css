@@ -1,0 +1,35 @@
+body {
+    height: 95vh;
+    width: 98vw;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  legend {
+    font-size: 30px;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .ticTackToe {
+    height: 65vmin;
+    width: 65vmin;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 21.666vmin 21.666vmin 21.666vmin;
+    border: 2px solid blanchedalmond;
+  }
+  
+  .box {
+    border-radius: 6.5px;
+    border: 2px solid black;
+    color: mediumvioletred;
+    font-weight: bolder;
+    font-size: 35px;
+    margin: 5px;
+  }
+  .reset{
+    border-radius: 5px;
+    background-color: magenta;
+  }

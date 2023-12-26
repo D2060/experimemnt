@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment</title>
+    <style>
+        .body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #197278;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxholder {
+            display: flex;
+        }
+
+        .box {
+            background-color: #C44536;
+            height: 150px;
+            width: 150px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+
+        /* for mobile phones */
+        @media only screen and (max-width:600px) {
+            .body {
+                background-color: #EDFFAB;
+            }
+
+            .box {
+                background-color: #FA7E61;
+            }
+
+            .boxholder {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+
+        /* for tablets */
+        @media only screen and (min-width:601px) and (max-width:1000px) {
+            .body {
+                background-color: #9D79BC;
+            }
+
+            .box {
+                background-color: #e0960d;
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="boxholder">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+
+</html>
