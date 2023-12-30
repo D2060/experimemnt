@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+svg{
+    fill: white;
+}
+body{
+    display: grid;
+    /* gap: 3px 3px; */
+    grid-template-columns: 25% 75%;
+    height: 100vh;
+    background-color: rgb(0,0,0);
+}
+
+.left{
+    grid-column-start: 1;
+    background-color: rgba(18, 18, 18, 0.815);
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+.right{
+    grid-column-start: 2;
+    overflow:scroll;
+    overflow-x:hidden;
+    background-color: rgba(18, 18, 18, 0.815);
+    
+}
+
+.left .top{
+    grid-row-start: 1;
+    color: white;
+    background-color: rgba(18, 18, 18, 0.815);
+    border-radius: 5px;
+    margin: 3%;
+    padding: 5%;
+}
+
+.left .top .home,.search{ 
+    display: flex;
+    text-align: center;
+    padding: 3%;
+}
+
+.left .bottom{
+    grid-row-start: 2;
+    background-color: rgba(18, 18, 18, 0.815);
+    padding: 5%;
+    margin: 3%;
+
+}
+
+.left .bottom .library .comp{
+    display: flex;
+}
+
+.left .bottom .library{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: rgb(24, 18, 18);
+    border-radius: 5px;
+    padding: 3%;
+    
+}
+.main-footer{
+    padding: 5%;
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    background-image: linear-gradient(to right, rgb(176,76,152), rgb(81,153,243));
+}
