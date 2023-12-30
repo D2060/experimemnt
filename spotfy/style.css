@@ -4,20 +4,23 @@
     color: white;
 }
 
+p{
+    padding: 5px;
+}
+
 svg{
     fill: white;
 }
 body{
     display: grid;
-    /* gap: 3px 3px; */
     grid-template-columns: 25% 75%;
-    height: 100vh;
     background-color: rgb(0,0,0);
+    height: 100vh;
 }
 
 .left{
     grid-column-start: 1;
-    background-color: rgba(18, 18, 18, 0.815);
+    background-color: rgba(18, 18, 18,);
     display: grid;
     grid-template-rows: 20% 80%;
 }
@@ -25,14 +28,15 @@ body{
     grid-column-start: 2;
     overflow:scroll;
     overflow-x:hidden;
-    background-color: rgba(18, 18, 18, 0.815);
+    overflow-y: hidden;
+    background-color: rgba(18, 18, 18,111);
     
 }
 
 .left .top{
     grid-row-start: 1;
     color: white;
-    background-color: rgba(18, 18, 18, 0.815);
+    background-color: rgba(18, 18, 18, 1);
     border-radius: 5px;
     margin: 3%;
     padding: 5%;
@@ -46,9 +50,10 @@ body{
 
 .left .bottom{
     grid-row-start: 2;
-    background-color: rgba(18, 18, 18, 0.815);
+    background-color: rgba(18, 18, 18, 0.9);
     padding: 5%;
     margin: 3%;
+    border-radius: 5px;
 
 }
 
@@ -59,7 +64,25 @@ body{
 .left .bottom .library{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
+
 }
+.maincontent{
+    height: 15%;
+    /* background-color: red; */
+    padding: 2%;
+    /* margin: 5%; */
+    overflow: scroll;
+    overflow-x: hidden;
+    content: hide;
+}
+.left .create,.left .podcast{
+    background-color:rgb(36,36,36);
+    padding: 5%;
+}
+
+
+
 
 .right .navbar{
     display: flex;
@@ -70,10 +93,12 @@ button{
     background-color: rgb(24, 18, 18);
     border-radius: 5px;
     padding: 3%;
+    margin: 5%;
     
 }
 .main-footer{
-    padding: 5%;
+    padding: 2%;
+    margin: 1%;
     grid-column-start:1 ;
     grid-column-end: 3;
     background-image: linear-gradient(to right, rgb(176,76,152), rgb(81,153,243));
