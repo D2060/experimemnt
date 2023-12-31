@@ -213,5 +213,13 @@ hr{
         flex-direction: column;
         padding: 8px;
     }
+
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .left{
+        display:none;
+    }
     
 }
